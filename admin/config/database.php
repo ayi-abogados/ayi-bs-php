@@ -14,19 +14,20 @@
 
 // Database configuration -> Railway
 // Railway Public URL
-$url = getenv("MYSQL_PUBLIC_URL");
+// Recuperar la variable MYSQL_PUBLIC_URL
+$url = "mysql://root:kMXtfKKjqaJyHHcUOCfAWrtSxNVyGHzb@autorack.proxy.rlwy.net:18602/ayi-bs-php";
 
 // Parsear la URL
 $db_info = parse_url($url);
 
-// Extraer credenciales
+// Extraer los valores del arreglo
 $db_host = $db_info['host'];
 $db_port = $db_info['port'];
 $db_user = $db_info['user'];
 $db_pass = $db_info['pass'];
-$db_name = ltrim($db_info['path'], '/'); // Nombre de la base de datos
+$db_name = ltrim($db_info['path'], '/'); // Eliminar el '/' inicial en el nombre de la DB
 
-// Crear conexión
+// Crear la conexión con MySQL
 $conn = new mysqli($db_host, $db_user, $db_pass, $db_name, (int)$db_port);
 
 // Check connection

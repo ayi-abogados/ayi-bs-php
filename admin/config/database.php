@@ -6,7 +6,7 @@
 //$db_pass = "";  // Tu contraseña de base de datos
 
 // Database configuration -> infinityfree.com
-$db_host = "autorack.proxy.rlwy.net";  // Tu host de InfinityFree
+$db_host = "mysql.railway.internal";  // Tu host de InfinityFree
 $db_name = "ayi-bs-php";  // Tu nombre de base de datos en InfinityFree
 $db_user = "root";  // Tu usuario de base de datos
 $db_pass = "Ayi2024*";  // Tu contraseña de base de datos

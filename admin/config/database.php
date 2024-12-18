@@ -13,7 +13,7 @@
 //$db_pass = "Ayi2024*";  // Tu contraseña de base de datos
 
 // Database configuration -> Railway
-/ Railway Public URL
+// Railway Public URL
 $url = getenv("MYSQL_PUBLIC_URL");
 
 // Parsear la URL

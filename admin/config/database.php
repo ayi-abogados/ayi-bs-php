@@ -13,13 +13,20 @@
 //$db_pass = "Ayi2024*";  // Tu contraseña de base de datos
 
 // Database configuration -> Railway
-$db_host = getenv("MYSQLHOST");           // Host proporcionado en Railway
-$db_port = getenv("MYSQLPORT");           // Puerto proporcionado en Railway
-$db_name = getenv("MYSQLDATABASE");       // Nombre de la base de datos
-$db_user = getenv("MYSQLUSER");           // Usuario de la base de datos
-$db_pass = getenv("MYSQLPASSWORD");       // Contraseña asignada por Railway
+/ Railway Public URL
+$url = getenv("MYSQL_PUBLIC_URL");
 
-// Create connection
+// Parsear la URL
+$db_info = parse_url($url);
+
+// Extraer credenciales
+$db_host = $db_info['host'];
+$db_port = $db_info['port'];
+$db_user = $db_info['user'];
+$db_pass = $db_info['pass'];
+$db_name = ltrim($db_info['path'], '/'); // Nombre de la base de datos
+
+// Crear conexión
 $conn = new mysqli($db_host, $db_user, $db_pass, $db_name, (int)$db_port);
 
 // Check connection

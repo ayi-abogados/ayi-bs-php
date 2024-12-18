@@ -15,20 +15,15 @@
 // Database configuration -> Railway
 // Railway Public URL
 // Recuperar la variable MYSQL_PUBLIC_URL
-$url = "mysql://root:kMXtfKKjqaJyHHcUOCfAWrtSxNVyGHzb@autorack.proxy.rlwy.net:18602/ayi-bs-php";
+// Configuración de base de datos para Railway
+$db_host = "mysql.railway.internal";  // Host interno de Railway
+$db_port = 3306;                     // Puerto interno por defecto para MySQL
+$db_user = "root";                   // Usuario de la base de datos
+$db_pass = "Ayi2024*";               // Contraseña de la base de datos
+$db_name = "ayi-bs-php";             // Nombre de la base de datos
 
-// Parsear la URL
-$db_info = parse_url($url);
-
-// Extraer los valores del arreglo
-$db_host = $db_info['host'];
-$db_port = $db_info['port'];
-$db_user = $db_info['user'];
-$db_pass = $db_info['pass'];
-$db_name = ltrim($db_info['path'], '/'); // Eliminar el '/' inicial en el nombre de la DB
-
-// Crear la conexión con MySQL
-$conn = new mysqli($db_host, $db_user, $db_pass, $db_name, (int)$db_port);
+// Crear conexión
+$conn = new mysqli($db_host, $db_user, $db_pass, $db_name, $db_port);
 
 // Check connection
 if ($conn->connect_error) {

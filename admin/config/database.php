@@ -13,7 +13,7 @@ $db_user = "root";  // Tu usuario de base de datos
 $db_pass = "Ayi2024*";  // Tu contraseña de base de datos
 
 // Create connection
-$conn = new mysqli($db_host, (int)$db_port, $db_user, $db_pass, $db_name);
+$conn = new mysqli($db_host, $db_user, $db_pass, $db_name, (int)$db_port);
 
 // Check connection
 if ($conn->connect_error) {

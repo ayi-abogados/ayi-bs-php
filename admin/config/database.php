@@ -6,11 +6,18 @@
 //$db_pass = "";  // Tu contraseña de base de datos
 
 // Database configuration -> Railway
-$db_host = "autorack.proxy.rlwy.net";  // Tu host de Railway
-$db_port = 18602; // Puerto público asignado
-$db_name = "ayi-bs-php";  // Tu nombre de base de datos en Railway
-$db_user = "root";  // Tu usuario de base de datos
-$db_pass = "Ayi2024*";  // Tu contraseña de base de datos
+//$db_host = "autorack.proxy.rlwy.net";  // Tu host de Railway
+//$db_port = 18602; // Puerto público asignado
+//$db_name = "ayi-bs-php";  // Tu nombre de base de datos en Railway
+//$db_user = "root";  // Tu usuario de base de datos
+//$db_pass = "Ayi2024*";  // Tu contraseña de base de datos
+
+// Database configuration -> Railway
+$db_host = getenv("MYSQLHOST");           // Host proporcionado en Railway
+$db_port = getenv("MYSQLPORT");           // Puerto proporcionado en Railway
+$db_name = getenv("MYSQLDATABASE");       // Nombre de la base de datos
+$db_user = getenv("MYSQLUSER");           // Usuario de la base de datos
+$db_pass = getenv("MYSQLPASSWORD");       // Contraseña asignada por Railway
 
 // Create connection
 $conn = new mysqli($db_host, $db_user, $db_pass, $db_name, (int)$db_port);

@@ -5,25 +5,14 @@
 //$db_user = "root";  // Tu usuario de base de datos
 //$db_pass = "";  // Tu contraseña de base de datos
 
-// Database configuration -> Railway
-//$db_host = "autorack.proxy.rlwy.net";  // Tu host de Railway
-//$db_port = 18602; // Puerto público asignado
-//$db_name = "ayi-bs-php";  // Tu nombre de base de datos en Railway
-//$db_user = "root";  // Tu usuario de base de datos
-//$db_pass = "Ayi2024*";  // Tu contraseña de base de datos
+// Database configuration -> infinityfree.com
+$db_host = "sql203.infinityfree.com";  // Tu host de InfinityFree
+$db_name = "if0_37873002_ayi_bs_admin";  // Tu nombre de base de datos en InfinityFree
+$db_user = "if0_37873002";  // Tu usuario de base de datos
+$db_pass = "ayiabogados24";  // Tu contraseña de base de datos
 
-// Database configuration -> Railway
-// Railway Public URL
-// Recuperar la variable MYSQL_PUBLIC_URL
-// Configuración de base de datos para Railway
-$db_host = "mysql.railway.internal";  // Host interno de Railway
-$db_port = 3306;                     // Puerto interno por defecto para MySQL
-$db_user = "root";                   // Usuario de la base de datos
-$db_pass = "Ayi2024*";               // Contraseña de la base de datos
-$db_name = "ayi-bs-php";             // Nombre de la base de datos
-
-// Crear conexión
-$conn = new mysqli($db_host, $db_user, $db_pass, $db_name, $db_port);
+// Create connection
+$conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
 
 // Check connection
 if ($conn->connect_error) {

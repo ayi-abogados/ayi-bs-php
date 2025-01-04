@@ -1,15 +1,15 @@
 <?php
 // Database configuration -> localhost
-//$db_host = "localhost";  // Tu host de InfinityFree
-//$db_name = "ayi_bs_admin";  // Tu nombre de base de datos en InfinityFree
-//$db_user = "root";  // Tu usuario de base de datos
-//$db_pass = "";  // Tu contraseña de base de datos
+$db_host = "localhost";  // Tu host de InfinityFree
+$db_name = "ayi_bs_admin";  // Tu nombre de base de datos en InfinityFree
+$db_user = "root";  // Tu usuario de base de datos
+$db_pass = "";  // Tu contraseña de base de datos
 
 // Database configuration -> infinityfree.com
-$db_host = "sql203.infinityfree.com";  // Tu host de InfinityFree
-$db_name = "if0_37873002_ayi_bs_admin";  // Tu nombre de base de datos en InfinityFree
-$db_user = "if0_37873002";  // Tu usuario de base de datos
-$db_pass = "ayiabogados24";  // Tu contraseña de base de datos
+//$db_host = "sql203.infinityfree.com";  // Tu host de InfinityFree
+//$db_name = "if0_37873002_ayi_bs_admin";  // Tu nombre de base de datos en InfinityFree
+//$db_user = "if0_37873002";  // Tu usuario de base de datos
+//$db_pass = "ayiabogados24";  // Tu contraseña de base de datos
 
 // Create connection
 $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);

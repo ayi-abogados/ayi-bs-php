@@ -75,7 +75,7 @@ $modalHtml = <<<HTML
                     <h5 class="modal-title" id="loginModalLabel">Inicio de Sesión</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body p-0">
+                <div class="modal-body p-0" style="height: 490px;">
                     <iframe id="loginFrame" class="modal-iframe" src=""></iframe>
                 </div>
             </div>

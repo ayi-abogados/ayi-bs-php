@@ -72,8 +72,11 @@ $conn->close();
     </style>
 </head>
 <body>
-    <div class="login-container">
+    <div class="login-container" style="height: 400px;">
         <div class="bg-white rounded-lg">
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../assets/img/logo.jpg" style="width: 150px;">
+            </div>
             <h2 class="text-2xl font-bold mb-6 text-center">Inicio Sesión Admin</h2>
             
             <?php if (!empty($error)): ?>

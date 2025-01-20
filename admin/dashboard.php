@@ -91,10 +91,14 @@ $stmt->execute();
     <div class="flex h-screen">
         <!-- Sidebar -->
         <div class="sidebar w-64 bg-primary text-white">
-            <div class="p-4">
+            <br/>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../assets/img/logo-dash.jpg" style="width: 150px; box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);">
+            </div>
+            <div class="p-4" style="text-align: center;">
                 <h2 class="text-2xl font-bold">Panel de Administración</h2>
             </div>
-            <nav class="mt-4">
+            <nav class="mt-4" style="text-align: center;">
                 <?php
                 $pages = [
                     'index' => 'Inicio',

@@ -1,6 +1,6 @@
 <?php
 // Database configuration -> localhost
-$db_host = "localhost";  // Tu host de InfinityFree
+$db_host = "127.0.0.1";  // Tu host de InfinityFree
 $db_name = "ayi_bs_admin";  // Tu nombre de base de datos en InfinityFree
 $db_user = "root";  // Tu usuario de base de datos
 $db_pass = "";  // Tu contraseña de base de datos

@@ -3,7 +3,7 @@
 $db_host = "localhost";  // Tu host de InfinityFree
 $db_name = "ayi_bs_admin";  // Tu nombre de base de datos en InfinityFree
 $db_user = "root";  // Tu usuario de base de datos
-$db_pass = "Ayi24*";  // Tu contraseña de base de datos
+$db_pass = "";  // Tu contraseña de base de datos
 
 // Database configuration -> infinityfree.com
 //$db_host = "sql203.infinityfree.com";  // Tu host de InfinityFree
